@@ -227,172 +227,172 @@ public:
                
                 // title 
 
-                ImGui::PushFont(f1);
-                draw->AddText({ pos.x + 5, pos.y + 3 }, ImColor(menu_color[0], menu_color[1], menu_color[2]), "midn");
-                draw->AddText({ pos.x + 29, pos.y + 3 }, ImColor(255, 255, 0), "ight");
-                ImGui::PopFont();
-                ImGui::PushFont(f3);
-                draw->AddText({ pos.x + 49, pos.y + 3 }, ImColor(188, 141, 194), ".cl");
-                draw->AddText({ pos.x + 60, pos.y + 3 }, ImColor(255, 255, 0), "ub");
-                ImGui::PopFont();
+//                 ImGui::PushFont(f1);
+//                 draw->AddText({ pos.x + 5, pos.y + 3 }, ImColor(menu_color[0], menu_color[1], menu_color[2]), "midn");
+//                 draw->AddText({ pos.x + 29, pos.y + 3 }, ImColor(255, 255, 0), "ight");
+//                 ImGui::PopFont();
+//                 ImGui::PushFont(f3);
+//                 draw->AddText({ pos.x + 49, pos.y + 3 }, ImColor(188, 141, 194), ".cl");
+//                 draw->AddText({ pos.x + 60, pos.y + 3 }, ImColor(255, 255, 0), "ub");
+//                 ImGui::PopFont();
 
 
-                 draw->AddRect({ pos.x + 1, pos.y + 1 }, { pos.x + 500 , pos.y + 349 }, ImColor(22, 22, 22));
+//                  draw->AddRect({ pos.x + 1, pos.y + 1 }, { pos.x + 500 , pos.y + 349 }, ImColor(22, 22, 22));
 
-                 draw->AddRectFilled({ pos.x + 1, pos.y + 20 }, { pos.x + 500, pos.y + 23 }, ImColor(22, 22, 22));
+//                  draw->AddRectFilled({ pos.x + 1, pos.y + 20 }, { pos.x + 500, pos.y + 23 }, ImColor(22, 22, 22));
                  
                  
 
                  
-                 draw->AddRectFilledMultiColor({ pos.x + 1, pos.y + 21 }, { pos.x + 500, pos.y + 22 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
+//                  draw->AddRectFilledMultiColor({ pos.x + 1, pos.y + 21 }, { pos.x + 500, pos.y + 22 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
 
-                 draw->AddRectFilledMultiColor({ pos.x + 1, pos.y + 2 }, { pos.x + 500, pos.y + 22 }, ImColor(255, 255, 255, 3), ImColor(55, 255, 255, 3), ImColor(255, 0, 100, 22), ImColor(190, 210, 0, 22));
+//                  draw->AddRectFilledMultiColor({ pos.x + 1, pos.y + 2 }, { pos.x + 500, pos.y + 22 }, ImColor(255, 255, 255, 3), ImColor(55, 255, 255, 3), ImColor(255, 0, 100, 22), ImColor(190, 210, 0, 22));
                
-                 // buttons & tabs
+//                  // buttons & tabs
 
-                 ImGui::SetCursorPos(ImVec2(406.000f, 2.000f));
-                 if (ImGui::Button("Main", ImVec2(45, 19)))
-                     tabb = 0;
+//                  ImGui::SetCursorPos(ImVec2(406.000f, 2.000f));
+//                  if (ImGui::Button("Main", ImVec2(45, 19)))
+//                      tabb = 0;
 
-                 ImGui::Spacing();
-                 ImGui::SetCursorPos(ImVec2(445.000f, 2.000f));
-                 if (ImGui::Button("Keybinds", ImVec2(51, 19)))
-                     tabb = 1;
+//                  ImGui::Spacing();
+//                  ImGui::SetCursorPos(ImVec2(445.000f, 2.000f));
+//                  if (ImGui::Button("Keybinds", ImVec2(51, 19)))
+//                      tabb = 1;
 
-                 // main
+//                  // main
 
-                 if (tabb == 0)
-                 {
-                     draw->AddRectFilled({ pos.x + 8, pos.y + 32 }, { pos.x + 257, pos.y + 343 }, ImColor(17, 17, 17, 255));
+//                  if (tabb == 0)
+//                  {
+//                      draw->AddRectFilled({ pos.x + 8, pos.y + 32 }, { pos.x + 257, pos.y + 343 }, ImColor(17, 17, 17, 255));
                      
-                     draw->AddRectFilled({ pos.x + 492, pos.y + 32 }, { pos.x + 265, pos.y + 343 }, ImColor(17, 17, 17, 255));
+//                      draw->AddRectFilled({ pos.x + 492, pos.y + 32 }, { pos.x + 265, pos.y + 343 }, ImColor(17, 17, 17, 255));
 
-                     draw->AddRectFilledMultiColor({ pos.x + 8, pos.y + 343 }, { pos.x + 256, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
+//                      draw->AddRectFilledMultiColor({ pos.x + 8, pos.y + 343 }, { pos.x + 256, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
                      
-                     draw->AddRectFilledMultiColor({ pos.x + 493, pos.y + 343 }, { pos.x + 265, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
+//                      draw->AddRectFilledMultiColor({ pos.x + 493, pos.y + 343 }, { pos.x + 265, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
                     
                     
 
-                     ImGui::SetNextItemWidth(170.000f);
+//                      ImGui::SetNextItemWidth(170.000f);
 
-                     ImGui::SetCursorPos(ImVec2(14.000f, 40.000f));
-                     ImGui::Combo("Weapon", &selectedItem, " No Weapon\0 Assault Rifle\0 MP5\0 LR-300 Rifle\0 Thompson\0 Custom-SMG\00 M249");
-
-
-                     ImGui::SetNextItemWidth(170.f);
-
-                     ImGui::SetCursorPos(ImVec2(14.000f, 70.000f));
-
-                     ImGui::Combo("Sight", &selectedAttach, " No Scope\0 Simple\0 Holosight\0 8x Scope\0 16x Scope");
-
-                     ImGui::SetNextItemWidth(170.f);
-
-                     ImGui::SetCursorPos(ImVec2(14.000f, 100.000f));
-
-                     ImGui::Combo("Muzzle", &selectedMuzzle, " No Muzzle\0 Silencer\0 Muzzle Boost\0");
-
-                     ImGui::SetNextItemWidth(140.0f);
-
-                     ImGui::SetCursorPos(ImVec2(14.000f, 130.000f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderInt(" Randomization ", &randomisation, 0, 30);
-                     ImGui::PopFont();
+//                      ImGui::SetCursorPos(ImVec2(14.000f, 40.000f));
+//                      ImGui::Combo("Weapon", &selectedItem, " No Weapon\0 Assault Rifle\0 MP5\0 LR-300 Rifle\0 Thompson\0 Custom-SMG\00 M249");
 
 
-                     ImGui::SetNextItemWidth(140.f);
+//                      ImGui::SetNextItemWidth(170.f);
 
-                     ImGui::SetCursorPos(ImVec2(14.000f, 160.000f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderInt(" Inaccurate Start ", &start, 0, 100);
-                     ImGui::PopFont();
+//                      ImGui::SetCursorPos(ImVec2(14.000f, 70.000f));
 
-                     ImGui::SetCursorPos(ImVec2(15.000f, 186.000f));
+//                      ImGui::Combo("Sight", &selectedAttach, " No Scope\0 Simple\0 Holosight\0 8x Scope\0 16x Scope");
 
-                     ImGui::Checkbox("Enable Recoil Control", &recoil);
+//                      ImGui::SetNextItemWidth(170.f);
 
-                     ImGui::SetCursorPos(ImVec2(15.000f, 210.000f));
+//                      ImGui::SetCursorPos(ImVec2(14.000f, 100.000f));
+
+//                      ImGui::Combo("Muzzle", &selectedMuzzle, " No Muzzle\0 Silencer\0 Muzzle Boost\0");
+
+//                      ImGui::SetNextItemWidth(140.0f);
+
+//                      ImGui::SetCursorPos(ImVec2(14.000f, 130.000f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderInt(" Randomization ", &randomisation, 0, 30);
+//                      ImGui::PopFont();
+
+
+//                      ImGui::SetNextItemWidth(140.f);
+
+//                      ImGui::SetCursorPos(ImVec2(14.000f, 160.000f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderInt(" Inaccurate Start ", &start, 0, 100);
+//                      ImGui::PopFont();
+
+//                      ImGui::SetCursorPos(ImVec2(15.000f, 186.000f));
+
+//                      ImGui::Checkbox("Enable Recoil Control", &recoil);
+
+//                      ImGui::SetCursorPos(ImVec2(15.000f, 210.000f));
                      
-                     ImGui::Checkbox("Enable Hipfire Control", &hipfire); 
+//                      ImGui::Checkbox("Enable Hipfire Control", &hipfire); 
                      
                      
-                     ImGui::SetCursorPos(ImVec2(14.000f, 240.000f));
+//                      ImGui::SetCursorPos(ImVec2(14.000f, 240.000f));
 
-                     ImGui::SetNextItemWidth(10.0f);
-                     ImGui::SetNextItemWidth(2.f);
-                     ImGui::ColorEdit3("", menu_color, color_picker_flags);
-
-
+//                      ImGui::SetNextItemWidth(10.0f);
+//                      ImGui::SetNextItemWidth(2.f);
+//                      ImGui::ColorEdit3("", menu_color, color_picker_flags);
 
 
 
 
-                     ImGui::SetNextItemWidth(170.000f);
-
-                     ImGui::SetCursorPos(ImVec2(270.000f, 40.000f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderInt(" FOV ", &fov, 75, 90);
-                     ImGui::PopFont();
-
-                    
 
 
-                     ImGui::SetNextItemWidth(130.0f);
+//                      ImGui::SetNextItemWidth(170.000f);
 
-                     ImGui::SetCursorPos(ImVec2(270.000f, 80.f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderFloat("Sensitivity", &sens, .1, 2, "%.2g");
-                     ImGui::PopFont();
+//                      ImGui::SetCursorPos(ImVec2(270.000f, 40.000f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderInt(" FOV ", &fov, 75, 90);
+//                      ImGui::PopFont();
 
                     
 
 
-                     ImGui::SetNextItemWidth(150.0f);
+//                      ImGui::SetNextItemWidth(130.0f);
 
-                     ImGui::SetCursorPos(ImVec2(270.000f, 107.f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderInt(" X Control ", &xControl, 0, 100);
-                     ImGui::PopFont();
+//                      ImGui::SetCursorPos(ImVec2(270.000f, 80.f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderFloat("Sensitivity", &sens, .1, 2, "%.2g");
+//                      ImGui::PopFont();
 
-                     ImGui::SetNextItemWidth(150.f);
+                    
 
-                     ImGui::SetCursorPos(ImVec2(270.000f, 147.f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderInt(" Y Control ", &yControl, 0, 100);
-                     ImGui::PopFont();
 
-                     ImGui::SetNextItemWidth(115.0f);
+//                      ImGui::SetNextItemWidth(150.0f);
 
-                     ImGui::SetCursorPos(ImVec2(270.000f, 187.f));
-                     ImGui::Checkbox("Enable Anti-Afk", &afk);
+//                      ImGui::SetCursorPos(ImVec2(270.000f, 107.f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderInt(" X Control ", &xControl, 0, 100);
+//                      ImGui::PopFont();
 
-                     ImGui::SetNextItemWidth(115.000f);
+//                      ImGui::SetNextItemWidth(150.f);
+
+//                      ImGui::SetCursorPos(ImVec2(270.000f, 147.f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderInt(" Y Control ", &yControl, 0, 100);
+//                      ImGui::PopFont();
+
+//                      ImGui::SetNextItemWidth(115.0f);
+
+//                      ImGui::SetCursorPos(ImVec2(270.000f, 187.f));
+//                      ImGui::Checkbox("Enable Anti-Afk", &afk);
+
+//                      ImGui::SetNextItemWidth(115.000f);
 
                      
 
 
-                     ImGui::SetCursorPos(ImVec2(270.000f, 227.f));
-                     ImGui::PushFont(f4);
-                     ImGui::SliderInt(" Afk Interval ", &afkControl, 100, 1500);
-                     ImGui::PopFont();
+//                      ImGui::SetCursorPos(ImVec2(270.000f, 227.f));
+//                      ImGui::PushFont(f4);
+//                      ImGui::SliderInt(" Afk Interval ", &afkControl, 100, 1500);
+//                      ImGui::PopFont();
                     
                      
-                 }
+//                  }
 
-                 // keybinds
+//                  // keybinds
 
-                 if (tabb == 1)
-                 {
-                     draw->AddRectFilled({ pos.x + 8, pos.y + 32 }, { pos.x + 257, pos.y + 343 }, ImColor(17, 17, 17, 255));
+//                  if (tabb == 1)
+//                  {
+//                      draw->AddRectFilled({ pos.x + 8, pos.y + 32 }, { pos.x + 257, pos.y + 343 }, ImColor(17, 17, 17, 255));
 
-                     draw->AddRectFilled({ pos.x + 492, pos.y + 32 }, { pos.x + 265, pos.y + 343 }, ImColor(17, 17, 17, 255));
+//                      draw->AddRectFilled({ pos.x + 492, pos.y + 32 }, { pos.x + 265, pos.y + 343 }, ImColor(17, 17, 17, 255));
 
-                     draw->AddRectFilledMultiColor({ pos.x + 8, pos.y + 343 }, { pos.x + 256, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
+//                      draw->AddRectFilledMultiColor({ pos.x + 8, pos.y + 343 }, { pos.x + 256, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
 
-                     draw->AddRectFilledMultiColor({ pos.x + 493, pos.y + 343 }, { pos.x + 265, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
+//                      draw->AddRectFilledMultiColor({ pos.x + 493, pos.y + 343 }, { pos.x + 265, pos.y + 344 }, ImColor(255, 255, 255), ImColor(55, 255, 255), ImColor(255, 0, 100), ImColor(190, 210, 0));
 
-                     ImGui::Text("Hello World !");
+//                      ImGui::Text("Hello World !");
 
-                 }
+//                  }
 
 
                
